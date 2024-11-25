@@ -10,7 +10,6 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.settings/
 .loadpath
 .recommenders
 
@@ -23,45 +22,11 @@ local.properties
 # PyDev specific (Python IDE for Eclipse)
 *.pydevproject
 
-# CDT-specific (C/C++ Development Tooling)
-.cproject
-
 # CDT- autotools
 .autotools
 
-# Java annotation processor (APT)
-.factorypath
-
-# PDT-specific (PHP Development Tools)
-.buildpath
-
-# sbteclipse plugin
-.target
-
-# Tern plugin
-.tern-project
-
-# TeXlipse plugin
-.texlipse
-
-# STS (Spring Tool Suite)
-.springBeans
-
 # Code Recommenders
 .recommenders/
-
-# Annotation Processing
-.apt_generated/
-.apt_generated_test/
-
-# Scala IDE specific (Scala & Java development for Eclipse)
-.cache-main
-.scala_dependencies
-.worksheet
-
-# Uncomment this line if you wish to ignore the project description file.
-# Typically, this file would be tracked if it contains build/dependency configurations:
-#.project
 
 ### Eclipse Patch ###
 # Spring Boot Tooling
@@ -119,3 +84,23 @@ release
 *.su
 *.idb
 *.pdb
+
+
+# https://stackoverflow.com/questions/41224790/what-do-i-need-to-leave-out-of-git-for-eclipse-cdt-projects#48970905
+
+# Project files
+!.project
+!.cproject
+
+# C/C++ Development Tooling configuration
+!.settings/org.eclipse.cdt.codan.core.prefs
+
+# Stores file encodings config
+!.settings/org.eclipse.core.resources.prefs
+
+# Stores line terminators config
+!.settings/org.eclipse.core.runtime.prefs
+
+# System specific files
+.buildpath
+.settings/org.eclipse.cdt.core.prefs
